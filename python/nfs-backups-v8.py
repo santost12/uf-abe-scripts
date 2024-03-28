@@ -22,7 +22,7 @@ from datetime import timedelta
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(filename='/nfs-backup.log', encoding='utf-8', level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+logging.basicConfig(filename='/nfs-backup.log', level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
 ###
 # Don't forget to include a slash at the end.
