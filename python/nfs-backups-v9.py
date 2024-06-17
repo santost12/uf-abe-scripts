@@ -40,16 +40,14 @@ source_folders = [
 ###
 hostname = subprocess.getoutput("hostname -s")
 current_date = str(date.today())
-
 current_backup = backup_destination + hostname + '-' + current_date + '.tar.gz'
 current_backup_without_path = hostname + '-' + current_date + '.tar.gz'
-
-output = backup_destination + hostname + '-' + current_date + '.tar.gz'
 
 
 ###
 # Backup files
 ###
+output = backup_destination + hostname + '-' + current_date + '.tar.gz'
 message = "Beginning to create backup for: " + hostname + '-' + current_date + '.tar.gz'
 logger.info(message)
 
